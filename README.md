@@ -1,5 +1,6 @@
 # Speech-Enhancement Adversarial Evaluation
-Accepted by ICASSP 2026: "Adversarial Defense via Generative Speech Enhancement Module"
+Accepted by ICASSP 2026: ["Adversarial Defense via Generative Speech Enhancement Module"](https://ieeexplore.ieee.org/document/11463802) 
+
 Benchmarks for studying whether **speech-enhancement / generative-purification
 front-ends** make audio classifiers more robust to adversarial examples.
 
