@@ -1,0 +1,32 @@
+# Core dependencies for the evaluation pipeline (attack_evaluation.py + se_eval).
+# Tested with Python 3.10.  Install PyTorch following the official instructions
+# for your CUDA version first (https://pytorch.org), then `pip install -r requirements.txt`.
+torch
+torchaudio
+torchvision
+numpy
+scipy
+datasets
+safetensors
+scikit-learn
+tqdm
+PyYAML
+einops
+torchsde
+torchattacks
+blobfile
+
+# --- Optional, only needed by specific defenses / utilities ---------------
+# AudioPure / Consistency purification (HiFi-GAN vocoder via torch.hub):
+#   transformers
+# DeepFilterNet front-end used by torchdf/ and the latency benchmark:
+#   deepfilternet            # provides the `df` / `libdf` modules
+# Mamba-based enhancers (SEMamba / Mamba-SEUNet, not wired into the CLI):
+#   mamba-ssm
+# Signal-quality metrics / plotting / data analysis helpers:
+#   librosa
+#   pesq
+#   spafe
+#   statsmodels
+#   matplotlib
+#   pandas

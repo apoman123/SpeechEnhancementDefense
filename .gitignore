@@ -1,0 +1,44 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.python-version
+
+# Jupyter notebooks are intentionally not tracked in this repo
+*.ipynb
+
+# Model weights / checkpoints (see the README for how to obtain them)
+*.pt
+*.pth
+*.pkl
+*.ckpt
+*.tar
+*.safetensors
+*.bin
+*.h5
+*.onnx
+pretrained/
+checkpoints/
+
+# Large audio / data blobs
+*.wav
+*.flac
+*.mp3
+
+# Experiment outputs, logs and scratch
+logs/
+*.log
+exp/
+runs/
+wandb/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / OS noise
+.DS_Store
+.idea/
+.vscode/

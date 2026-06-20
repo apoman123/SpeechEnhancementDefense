@@ -1,0 +1,42 @@
+{   
+    "diffusion_config":{
+        "T": 200,
+        "beta_0": 0.0001,
+        "beta_T": 0.02
+    },
+    "wavenet_config": {
+        "in_channels": 1, 
+        "res_channels": 256, 
+        "skip_channels": 256, 
+        "out_channels": 1, 
+        "num_res_layers": 36, 
+        "dilation_cycle": 12, 
+        "diffusion_step_embed_dim_in": 128,
+        "diffusion_step_embed_dim_mid": 512,
+        "diffusion_step_embed_dim_out": 512
+    },
+    "train_config": {
+        "output_directory": "/data/nas07/PersonalData/apoman123/diffwave_vctk_finetuned/checkpoint",
+        "tensorboard_directory": "/data/nas07/PersonalData/apoman123/diffwave_vctk_finetuned/tensorboard",
+        "ckpt_iter": "max",
+        "iters_per_ckpt": 2000,
+        "iters_per_logging": 100,
+        "n_iters": 1050000,
+        "learning_rate": 2e-4,
+        "batch_size_per_gpu": 2
+    },
+    "trainset_config":{
+        "data_path": "/data/nas07/PersonalData/apoman123/vctk_files",
+        "segment_length": 16000,
+        "sampling_rate": 16000
+    },
+    "gen_config":{
+        "tensorboard_directory": "/data/nas07/PersonalData/apoman123/diffwave_vctk_finetuned/tensorboard",
+        "output_directory": "/data/nas07/PersonalData/apoman123/diffwave_vctk_finetuned/speeches",
+        "ckpt_path": "/data/nas07/PersonalData/apoman123/diffwave_vctk_finetuned/checkpoint"
+    },
+    "dist_config": {
+        "dist_backend": "nccl",
+        "dist_url": "tcp://localhost:54321"
+    }
+}

@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES=1
+torchrun --standalone --nnodes 1 --nproc-per-node 1 train_RCNN.py --batch_size 32 --dataset_path "/data/nas07/PersonalData/apoman123/QKWS" --save_path "/data/nas07/PersonalData/apoman123/kwsmodel_qkws_zero_mean" --log_path "/data/nas07/PersonalData/apoman123/kwsmodel_qkws_zero_mean/logs" 

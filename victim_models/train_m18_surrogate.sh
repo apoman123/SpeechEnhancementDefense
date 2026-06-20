@@ -1,0 +1,6 @@
+export CUDA_VISIBLE_DEVICES=2
+python m18_surrogate_training.py \
+--checkpoint_path "/home/apoman123/data/nas07/PersonalData/apoman123/m18_sc09_surrogate_zero_mean" \
+--log_path "/home/apoman123/data/nas07/PersonalData/apoman123/m18_sc09_surrogate_zero_mean/logs" \
+--dataset_path "/data/nas07/SharedBySMB/apoman123/sc09" --noise_adding_method "GaussianDBFS" --noise_dbfs -32 --defense_model_path "/data/nas07/SharedBySMB/apoman123/mpsenet" \
+--config_path "/home/apoman123/mpsenet-speech-enhanced/config.json" --classifier_path "/data/nas07/PersonalData/apoman123/m18_sc09_zero_mean/m5net_81.pt" --defense_module "MPSENet"

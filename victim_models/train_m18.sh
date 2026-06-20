@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES=0
+python m18_training.py --dataset_path "/data/nas07/SharedBySMB/apoman123/sc09" --checkpoint_path "/data/nas07/PersonalData/apoman123/gaussian_m18_sc09" --log_path "/data/nas07/PersonalData/apoman123/gaussian_m18_sc09/logs"

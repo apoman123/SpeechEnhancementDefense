@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES=2
+python m5_training.py --dataset_path "/data/nas07/SharedBySMB/apoman123/sc09" --checkpoint_path "/data/nas07/PersonalData/apoman123/m5_sc09_try" --log_path "/data/nas07/PersonalData/apoman123/m5_sc09_try/logs"
